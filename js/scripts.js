@@ -1,6 +1,8 @@
 var pingPong = function(input) {
   if (input%3 === 0) {
     return "ping";
+  } else if (input%5 === 0) {
+    return "pong";
   }
 };
 
