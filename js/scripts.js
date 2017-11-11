@@ -8,6 +8,7 @@ var pingPong = function(input) {
   } else if (input%3 === 0) {
     return "ping";
   } else {
+    pingArray = []
     for (var index = input; index >= 1; index -= 1) {
       pingArray.push(index + " ");
     }
@@ -17,10 +18,11 @@ var pingPong = function(input) {
 
 $(document).ready(function() {
   $("#ping form").submit(function(event) {
+    $("#output").fadeOut();
     var numInput = $("input#num-input").val();
     var numOutput = pingPong(numInput)
     $("#output").html(numOutput);
-    $("#output").show();
+    $("#output").fadeIn();
     event.preventDefault();
  });
 });
