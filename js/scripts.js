@@ -1,8 +1,10 @@
 var pingPong = function(input) {
-  if (input%3 === 0) {
-    return "ping";
+  if (input%15 === 0) {
+    return "pingpong";
   } else if (input%5 === 0) {
     return "pong";
+  } else if (input%3 === 0) {
+    return "ping";
   }
 };
 
