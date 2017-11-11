@@ -10,7 +10,6 @@ var pingPong = function(input) {
   } else {
     for (var index = input; index >= 1; index -= 1) {
       pingArray.push(index + " ");
-
     }
     return pingArray;
   }
@@ -20,7 +19,7 @@ $(document).ready(function() {
   $("#ping form").submit(function(event) {
     var numInput = $("input#num-input").val();
     var numOutput = pingPong(numInput)
-    $("#output").append(numOutput);
+    $("#output").html(numOutput);
     $("#output").show();
     event.preventDefault();
  });
