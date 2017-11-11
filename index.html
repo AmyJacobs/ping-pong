@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Ping Pong</title>
   </head>
   <body>
-
+    <div class="container">
+      <h1>Ping Pong</h1>
+      <div id="ping">
+        <form>
+          <div class="form-group">
+            <label for="num-input">A number:</label>
+            <input id="num-input" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Ping!</button>
+        </form>
+      </div>
+      <div id="output">
+      </div>
+    </div>
   </body>
 </html>
